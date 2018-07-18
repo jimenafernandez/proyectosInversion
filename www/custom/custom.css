@@ -1,0 +1,505 @@
+@CHARSET "UTF-8";
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot?v=4.4.0');
+  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: "Helvetica Neue", HelveticaNeue, "Helvetica-Neue",	Helvetica, "BBAlpha Sans", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	display: block;
+}
+/* Add tabbar need bottom space  ------------------------------------------------------------------ */
+/* Agregar tabbar neceista espacio abajo */
+#mui-viewport {
+	top: 0px; 
+}
+#contenedorAddress{
+    margin-top: 4%;
+    float: left;
+    text-align: center;
+    width: 45%;
+}
+#contenedorAmount{
+    margin-top: 4%;
+    float: left;
+    text-align: center;
+	width: 40%;
+    margin-left: 11%;
+}
+#myDialog{
+	height: 200px;
+    width: 347px;
+}
+#transacciones{
+	height: 33px;
+    margin-top: 14px;
+    background-color: powderblue;
+    padding-top: 6px;
+    margin-bottom: 3%;
+    text-align: center;
+    border: thick;
+    border-style: groove;
+}
+
+#transaccionesListado{
+    margin-left: 8%;
+    margin-top: 1%;
+    background: white;
+    width: 85%;
+    border-style: outset;
+    border-color: paleturquoise;;
+}
+#botonAtras{
+    float: left;
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    position: absolute;
+    border-style: solid;
+    border-color: rgb(114,106,99);
+    height: 30px;
+    background-color: white;
+    font-family: sans-serif;
+    color: rgb(114,106,99);
+    font-weight: bold;
+}
+#campoAdd{
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+#campoAm{
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+}
+#campoNombre{
+	margin-left: 30%;
+    width: 45%;
+    margin-top: 3%;
+    text-align: center;
+}
+#campoApellido{
+	margin-left: 30%;
+    width: 45%;
+    margin-top: 5%;
+    text-align: center;
+}
+#fecha{
+	margin-left: 30%;
+    width: 45%;
+    margin-top: 2%;
+    text-align: center;
+}
+#fechaNac{
+	font-size: 13px;
+    margin-top: 18px;
+    margin-left: 30%;
+}
+#campoMision{
+	margin-left: 30%;
+    width: 45%;
+    margin-top: 3%;
+    text-align: center;
+}
+#campoVision{
+	margin-left: 30%;
+    width: 45%;
+    margin-top: 3%;
+    text-align: center;
+}
+#botonFormularioONG{
+	margin-left: -31%;
+    width: 189px;
+    margin-bottom: 16px;
+    position: absolute;
+    margin-top: 6%;
+    border-style: solid;
+    border-color: paleturquoise;
+    font-family: monospace;
+    border-radius: 24px;
+    height: 39px;
+    background-color: white;
+}
+
+#botonFormularioDonador{
+	margin-left: -31%;
+    margin-top: 53px;
+    width: 189px;
+    margin-bottom: 16px;
+    position: absolute;
+    margin-top: 13%;
+    border-style: solid;
+    border-color: paleturquoise;
+    font-family: monospace;
+    border-radius: 24px;
+    height: 39px;
+    background-color: white;
+
+}
+#campoObjetive{
+	margin-left: 30%;
+    width: 45%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+#campoPalabra{
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+    margin-left: 36%;
+}
+
+#titulo{
+	font-weight: bold;
+	margin-left: 6px;
+	margin-top: 13px;
+}
+#listado{
+	margin-left: 25px;
+}
+#listadoUltimo{
+	margin-bottom: 15px;
+	margin-left: 25px;
+}
+#boton{
+    margin-left: 46%;
+    margin-top: 53px;
+    width: 342px;
+    height: 20px;
+    margin-bottom: 16px;
+    position: absolute;
+    margin-top: 24%;
+    font-family: sans-serif;
+    /* border-radius: 24px; */
+    height: 70px;
+    font-size: large;
+    border-style: solid;
+    background-color: white;
+    border-color: rgb(114,106,99);
+    color: rgb(114,106,99);
+    font-weight: bold;
+
+}
+#boton2{
+    margin-left: 46%;
+    margin-top: 53px;
+    width: 342px;
+    height: 20px;
+    margin-bottom: 16px;
+    position: absolute;
+    margin-top: 16%;
+    font-family: sans-serif;
+    /* border-radius: 24px; */
+    height: 70px;
+    font-size: large;
+    border-style: solid;
+    background-color: white;
+    border-color: rgb(114,106,99);
+    color: rgb(114,106,99);
+    font-weight: bold;
+}
+
+#boton3{
+    margin-left: 46%;
+    margin-top: 53px;
+    width: 342px;
+    height: 20px;
+    margin-bottom: 16px;
+    position: absolute;
+    margin-top: 8%;
+    font-family: sans-serif;
+    /* border-radius: 24px; */
+    height: 70px;
+    font-size: large;
+    border-style: solid;
+    background-color: white;
+    border-color: rgb(114,106,99);
+    color: rgb(114,106,99);
+    font-weight: bold;
+}
+#foto1{
+    
+    height: 614px;
+    margin-top: 0px;
+    margin: auto;
+    background-position: center;
+    margin-left: 0px;
+    display: block;
+    content: url(images/12.png);
+    position: absolute;
+    
+}
+#foto2{
+    width: 25%;
+    height: 273%;
+    padding-top: 20px;
+    margin: auto;
+    background-position: center;
+    margin-left: 25%;
+    position: absolute;
+    content: url(images/2.jpg);
+}
+
+#foto3{
+    width: 25%;
+    height: 273%;
+    padding-top: 20px;
+    margin: auto;
+    background-position: center;
+    margin-left: 50%;
+    content: url(images/3.jpg);
+}
+
+#foto4{
+    width: 25%;
+    height: 273%;
+    padding-top: 20px;
+    margin: auto;
+    background-position: center;
+    margin-left: 75%;
+    padding-right: 20px;
+    content: url(images/Zara.png);
+}
+
+#foto5{
+    height: 614px;
+    margin-top: 140px;
+    padding-top: 60px;
+    margin: auto;
+    background-position: center;
+    margin-left: 0px;
+    display: block;
+    content: url(images/Ropa.jpg);
+    position: absolute;
+    
+}
+
+#foto7{
+    height: 614px;
+    margin-top: 115px;
+    padding-top: 14px;
+    margin: auto;
+    width: 68%;
+    background-position: center;
+    margin-left: 416px;
+    display: block;
+    content: url(images/45.jpg);
+    position: absolute;
+    
+}
+#foto8{
+    height: 614px;
+    margin-top: 95px;
+    padding-top: 60px;
+    margin: auto;
+    width: 101%;
+    background-position: center;
+    /* margin-left: 291px; */
+    display: block;
+    content: url(images/33.JPG);
+    position: absolute;
+    
+}
+
+#foto9{
+    height: 613px;
+    margin-top: 9px;
+    padding-top: 60px;
+    margin-left: 113PX;
+    /* margin: auto; */
+    width: 84%;
+    background-position: center;
+    /* margin-left: 291px; */
+    display: block;
+    content: url(images/22.PNG);
+    position: absolute;
+    
+}
+
+#foto6{
+    width: 15%;
+    height: 77%;
+    padding-top: 20px;
+    margin: auto;
+    background-position: center;
+    margin-left: 84%;
+    padding-right: 13px;
+    content: url(images/Zara.png);
+}
+#home-page{
+	background-color: rgb(234,225,217);
+}
+#template-page-3{
+    background-color: rgb(234,225,217);
+}
+#template-page-2{
+     background-color: rgb(234,225,217);
+}
+#template-page-4{
+    background-color: rgb(234,225,217);
+}
+#palabra{
+    padding-top: 249px;
+    padding-left: 4%;
+    padding-bottom: 20px;
+    font-size: xx-large;
+    font-family: sans-serif;
+    position: absolute;
+    width: 398px;
+}
+#botonDialog{
+	margin-left: 20%;
+    margin-top: 33px;
+    width: 189px;
+}
+#botonCancelar{
+	margin-left: 20%;
+    margin-top: 10px;
+    width: 189px;
+}
+
+#mui-viewport>.mui-page>.mui-page-body {
+	top:0px;
+}
+/*Page sample  ------------------------------------------------------------------ */
+.mui-page-header {
+	background-color: white;
+	border-bottom: solid 1px #bbb;
+}
+
+#mui-viewport>.mui-page>.mui-page-header {
+	height: 60px;
+	background-color: white;
+
+}
+.mui-page-logo {
+    width: 132px;
+    height: 47px;
+    padding-top: 14px;
+    margin: auto;
+    background-position: center;
+    content: url(images/13.JPG);
+    background-repeat: no-repeat;
+    margin-left: 49%;
+    position: absolute;
+}
+.mui-page-title {
+	width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 12px;
+}
+.mui-page-body {}
+.mui-page-body-content {
+	padding: 10px;
+}
+/* GoBack button ------------------------------------------------------------------ */
+.mui-backarrow {
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	width: 40px;
+	height: 37px;
+}
+.mui-backarrow:after {
+	font-family: FontAwesome;
+	content: '\f104';
+	font-size: 35px;
+	color: #1A7EFA;
+}
+/* Menu button ------------------------------------------------------------------ */
+.mui-headmenu {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 45px;
+	height: 37px;
+	text-align: right;
+}
+.mui-headmenu:after {
+	font-family: FontAwesome;
+	content: '\f0c9';
+	font-size: 25px;
+	color: #1A7EFA;
+}
+/* Tabbar sample ------------------------------------------------------------------ */
+.mui-tabbar {
+	width: 100%;
+	height: 48px;
+	position: absolute;
+	bottom: 0px;
+	background-color: #FAFAF9;
+}
+.mui-tabbar ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+.mui-tabbar ul li {
+	width: 20%;
+	height: 48px;
+	float: left;
+	position: relative;
+}
+.mui-tabbar ul li:before {
+	font-family: 'FontAwesome';
+	font-size: 27px;
+	display: block;
+	width: 100%;
+	height: 26px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center 0px;
+	content: ' ';	
+	margin-top: 5px;
+}
+.mui-tabbar ul li:hover:before {}
+.mui-tabbar ul li:nth-child(1):before {
+	content: "\f087";
+}
+.mui-tabbar ul li:nth-child(2):before {
+	content: "\f0a6";
+}
+.mui-tabbar ul li:nth-child(3):before {
+	content: "\f25b";
+}
+.mui-tabbar ul li:nth-child(4):before {
+	content: "\f0a5";
+}
+.mui-tabbar ul li:nth-child(5):before {
+	content: "\f0a4";
+}
+.mui-tabbar ul li a {
+	font-size: 12px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    top: 0px;
+    left: 0px;
+    padding-top: 33px;
+}
+/* Menu sample ------------------------------------------------------------------ */
+#menu-panel {
+	top: 0px;
+	left: 100%;
+	width: 90%;
+	max-width: 250px;
+	height: 100%;
+	background-color: #575757;
+	color: #fff;
+}
+.mui-panel-header {
+	display: none;
+}
